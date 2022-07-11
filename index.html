@@ -23,7 +23,7 @@
       <div class="flex row">
           <div>
             <p>My balance</p>
-            <p class="cost-heading">$921.48</p>
+            <h2 class="cost-heading">$921.48</h2>
           </div>
           <div class="logo">
             <img src="./images/logo.svg" alt="Logo">
@@ -32,16 +32,19 @@
   </header>
 <main>
     <div class="flex column">
-      <h2>Spending &mdash; Last 7 days</h2>
+      <h2>Spending &ndash; Last 7 days</h2>
       <div class="bars flex row">
-        <div class="bars-bar" id="mon" data-expense="17.45"></div>
-        <div class="bars-bar" id="tue" data-expense="34.91"></div>
-        <div class="bars-bar" id="wed" data-expense="52.36"></div>
-        <div class="bars-bar" id="thu" data-expense="31.07"></div>
-        <div class="bars-bar" id="fri" data-expense="23.39"></div>
-        <div class="bars-bar" id="sat" data-expense="43.28"></div>
-        <div class="bars-bar" id="sun" data-expense="25.48"></div>
+        <div class="bars-bar" id="mon" data-day="mon" data-expense="17.45"></div>
+        <div class="bars-bar" id="tue" data-day="tue" data-expense="34.91"></div>
+        <div class="bars-bar" id="wed" data-day="wed" data-expense="52.36"></div>
+        <div class="bars-bar" id="thu" data-day="thu" data-expense="31.07"></div>
+        <div class="bars-bar" id="fri" data-day="fri" data-expense="23.39"></div>
+        <div class="bars-bar" id="sat" data-day="sat" data-expense="43.28"></div>
+        <div class="bars-bar" id="sun" data-day="sun" data-expense="25.48"></div>
       </div>
+      <div class="footer">
+
+      
       <p>Total this month</p>
       <div class="flex row">
         <div class="total-expense">
@@ -52,6 +55,7 @@
           <p>from last month</p>
         </div>
       </div>
+    </div>
     </div>
 
 </main>

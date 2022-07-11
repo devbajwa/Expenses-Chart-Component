@@ -7,6 +7,8 @@
     --Medium-Brown: hsl(28, 10%, 53%);
     --Cream: hsl(27, 66%, 92%);
     --VeryPaleOrange: hsl(33, 100%, 98%);
+    --White: #fff;
+    --Black: #000;
 }
 
 
@@ -19,4 +21,117 @@
 
 body{
     background-color: var(--Cream);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
+
+img{
+    max-width: 100%;
+}
+
+header,main{
+    padding: 1.25rem;
+    border-radius: 16px;
+}
+
+header{
+    background-color: var(--SoftRed);
+    color: var(--VeryPaleOrange);
+    margin-bottom: 1rem;
+}
+
+main{
+    background-color: var(--White);
+    
+}
+
+p{
+    font-size: 0.85rem;
+}
+
+main p{
+    color: var(--Medium-Brown);
+    
+}
+
+.container{
+    min-width: 350px;
+    width: 500px;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.row{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.last-month{
+    text-align: right;
+}
+.percent{
+    font-weight: bold;
+    color: var(--Black);
+}
+
+/**
+ BARS
+*/
+
+.bars{
+    border-bottom: 1px solid var(--Cream);
+    padding-bottom: 3rem;
+}
+
+.bars-bar{
+    width: 2.5rem;
+    height: 50px;
+    background-color: var(--SoftRed);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1.25rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.bars-bar:hover{
+    background-color: var(--Cyan);
+}
+
+.bars-bar:hover::before{
+    content: '$'attr(data-expense);
+    background-color: var(--Black);
+    color: var(--VeryPaleOrange);
+    padding: 0.33em;
+    border-radius: 5px;
+    font-size: 0.80rem;
+    margin: 0;
+    position: absolute;
+    top: -30px;
+    left: -25%;
+    right: -25%;
+    text-align: center;
+}
+
+.bars-bar::after{
+    content: attr(data-day);
+    color: var(--Medium-Brown);
+    padding: 0.33em;
+    border-radius: 5px;
+    font-size: 0.80rem;
+    margin: 0;
+    position: absolute;
+    bottom: -25px;
+    left: -25%;
+    right: -25%;
+    text-align: center;
+}
+
