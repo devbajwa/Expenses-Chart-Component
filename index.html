@@ -16,29 +16,50 @@
   </style>
 </head>
 <body>
+  <div class="container">
+  
+ 
+  <header>
+      <div class="flex row">
+          <div>
+            <p>My balance</p>
+            <p class="cost-heading">$921.48</p>
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Logo">
+          </div>
+      </div>
+  </header>
+<main>
+    <div class="flex column">
+      <h2>Spending &mdash; Last 7 days</h2>
+      <div class="bars flex row">
+        <div class="bars-bar" id="mon" data-expense="17.45"></div>
+        <div class="bars-bar" id="tue" data-expense="34.91"></div>
+        <div class="bars-bar" id="wed" data-expense="52.36"></div>
+        <div class="bars-bar" id="thu" data-expense="31.07"></div>
+        <div class="bars-bar" id="fri" data-expense="23.39"></div>
+        <div class="bars-bar" id="sat" data-expense="43.28"></div>
+        <div class="bars-bar" id="sun" data-expense="25.48"></div>
+      </div>
+      <p>Total this month</p>
+      <div class="flex row">
+        <div class="total-expense">
+          <h1>$478.33</h1>
+        </div>
+        <div class="last-month">
+          <p class="percent">+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+</main>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    {Coded by <a href="#">Your Name Here</a>}.
   </div>
 </body>
 </html>
