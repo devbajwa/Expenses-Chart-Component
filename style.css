@@ -27,7 +27,7 @@ body{
 }
 
 img{
-    max-width: 100%;
+    max-width: 70%;
 }
 
 header,main{
@@ -70,8 +70,16 @@ main p{
     justify-content: space-between;
 }
 
+.align-center{
+    align-items: center;
+}
+
 .column{
     flex-direction: column;
+}
+
+.bars{
+    align-items: flex-end;
 }
 
 .last-month{
