@@ -2,7 +2,9 @@
 
 :root{
     --SoftRed: hsl(10, 79%, 65%);
+    --SoftRedLight: hsl(10, 79%, 65%, 0.70);
     --Cyan: hsl(186, 34%, 60%);
+    --CyanLight: hsl(186, 34%, 60%, 0.50);
     --Darkbrown: hsl(25, 47%, 15%);
     --Medium-Brown: hsl(28, 10%, 53%);
     --Cream: hsl(27, 66%, 92%);
@@ -111,7 +113,11 @@ main p{
 }
 
 .bars-bar:hover{
-    background-color: var(--Cyan);
+    background-color: var(--CyanLight);
+}
+
+.today:hover{
+    background-color: var(--SoftRedLight);
 }
 
 .bars-bar:hover::before{
@@ -142,4 +148,5 @@ main p{
     right: -25%;
     text-align: center;
 }
+
 
