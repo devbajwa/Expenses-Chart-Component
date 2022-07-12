@@ -59,7 +59,7 @@ main p{
 
 .container{
     min-width: 350px;
-    width: 500px;
+    width: 425px;
 }
 
 .flex{
@@ -78,6 +78,10 @@ main p{
 
 .column{
     flex-direction: column;
+}
+
+.logo{
+    text-align: end;
 }
 
 .bars{
@@ -150,3 +154,12 @@ main p{
 }
 
 
+/**
+MOBILE
+*/
+
+@media screen and (max-width: 575px) {
+    .container{
+        max-width: 350px;
+    }
+}
