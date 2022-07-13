@@ -152,6 +152,9 @@ MOBILE
     .container{
         max-width: 350px;
     }
+    .bars-bar{
+        width: 2.5em;
+    }
 }
 
 
