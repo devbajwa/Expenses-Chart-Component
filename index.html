@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./dyna-app.js" defer></script>
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-  
- 
-  <header>
-      <div class="flex row align-center">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="flex row align-center">
           <div>
             <p>My balance</p>
             <h2 class="cost-heading">$921.48</h2>
           </div>
           <div class="logo">
-            <img src="./images/logo.svg" alt="Logo">
+            <img src="./images/logo.svg" alt="Logo" />
           </div>
-      </div>
-  </header>
-<main>
-    <div class="flex column">
-      <h2>Spending &ndash; Last 7 days</h2>
-      <div class="bars flex row">
-        <div class="bars-bar" id="mon" data-day="mon" data-expense="17.45"></div>
-        <div class="bars-bar" id="tue" data-day="tue" data-expense="34.91"></div>
-        <div class="bars-bar" id="wed" data-day="wed" data-expense="52.36"></div>
-        <div class="bars-bar" id="thu" data-day="thu" data-expense="31.07"></div>
-        <div class="bars-bar" id="fri" data-day="fri" data-expense="23.39"></div>
-        <div class="bars-bar" id="sat" data-day="sat" data-expense="43.28"></div>
-        <div class="bars-bar" id="sun" data-day="sun" data-expense="25.48"></div>
-      </div>
-      <div class="footer">
-
-      
-      <p>Total this month</p>
-      <div class="flex row">
-        <div class="total-expense">
-          <h1>$478.33</h1>
         </div>
-        <div class="last-month">
-          <p class="percent">+2.4%</p>
-          <p>from last month</p>
+      </header>
+      <main>
+        <div class="flex column">
+          <h2>Spending &ndash; Last 7 days</h2>
+          <ul id="bars" class="bars flex row"></ul>
+          <div class="footer">
+            <p>Total this month</p>
+            <div class="flex row">
+              <div class="total-expense">
+                <h1>$478.33</h1>
+              </div>
+              <div class="last-month">
+                <p class="percent">+2.4%</p>
+                <p>from last month</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </main>
     </div>
 
-</main>
-</div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    {Coded by <a href="#">Your Name Here</a>}.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. {Coded by <a href="#">Your Name Here</a>}.
+    </div>
+  </body>
 </html>

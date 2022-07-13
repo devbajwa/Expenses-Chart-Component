@@ -106,7 +106,7 @@ main p{
 
 .bars{
     border-bottom: 1px solid var(--Cream);
-    padding-bottom: 1.33rem;
+    padding-bottom: 3rem;
 }
 
 .bars-bar{
@@ -132,12 +132,26 @@ main p{
     content: '$'attr(data-expense);
     background-color: var(--Black);
     color: var(--VeryPaleOrange);
-    /* padding: 0.33em; */
+    padding: 0.33em;
     border-radius: 5px;
     font-size: 0.80rem;
     margin: 0;
     position: absolute;
     top: -30px;
+    left: -25%;
+    right: -25%;
+    text-align: center;
+}
+
+.bars-bar::after{
+    content: attr(data-day);
+    color: var(--Medium-Brown);
+    padding: 0.33em;
+    border-radius: 5px;
+    font-size: 0.80rem;
+    margin: 0;
+    position: absolute;
+    bottom: -25px;
     left: -25%;
     right: -25%;
     text-align: center;
@@ -154,20 +168,3 @@ MOBILE
     }
 }
 
-
-/**
-ADDITIONAL
-*/
-
-ul{
-    list-style-type: none;
-   
-}
-
-li{
-    position: relative;
-    color: var(--Medium-Brown);
-    font-size: 0.80rem;
-    text-align: center;
-    line-height: 26px;
-}
